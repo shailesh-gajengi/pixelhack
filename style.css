@@ -1,0 +1,123 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}body {
+      margin: 0;
+      background-color: #000;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      background-image: url("bgi.jpeg");
+      background-size: cover;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+    }
+    .top{
+        display: flex;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 80px;
+        text-align: center;
+        color: white;
+        height: 130px;
+        width: 200px;
+        background-color: blue;
+    }
+    .navbar {
+  background-color: #2c3e50;
+  padding: 1rem 2rem;
+  animation: wait 4s ease-in 0s 1 normal;
+    border: 2px dashed aqua;
+}
+@keyframes wait {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.navbar-container {
+  display: flex;
+  justify-content:center;
+  max-width: 1200px;
+  align-items: center;
+  
+
+
+}
+
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover {
+  color: #3498db;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.progress-counter {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #aaa;
+}
+
+.loader-text {
+  font-size: 2rem;
+  text-align: center;
+  color:chartreuse;
+  line-height: 1.5;
+  animation: der 3s ease-in 50ms 1 normal;
+}
+@keyframes der {
+    from{
+        opacity: 0;
+    }
+    to{
+opacity: 100;
+    }
+}
+.highlight {
+  opacity: 0;
+  animation: fadeIn 4s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    font-style: italic;
+  }
+  50%{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  }
+  100%{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+}
